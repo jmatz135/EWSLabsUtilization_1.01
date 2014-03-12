@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+	        android:title="Auto Refresh"
+	        android:defaultValue="false"
+	        android:summary="Select to turn on automatic updating"
+	        android:key="PREF_AUTO_UPDATE" />
+	<ListPreference
+	        android:title="Refresh Frequency"
+	        android:summary="Frequency at which to refresh labs status"
+	        android:key="PREF_UPDATE_FREQ"	       
+	        android:entries="@array/update_freq_options"
+	        android:entryValues="@array/update_freq_values"
+	        android:dialogTitle="Refresh frequency"
+   			android:defaultValue="15" />
+</PreferenceScreen>
